@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a3b6b5d-8b00-440b-8d36-4ee55765d0fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/drawable/ic_instagram.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/StarterApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/StarterApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/values/colors.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1XLGZ8VsRv9DA9hDQYVuPW46IKC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="ChatServerMLo_4.02.2014_14.06.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a3b6b5d-8b00-440b-8d36-4ee55765d0fd" name="Default Changelist" comment="" />
+      <created>1580818013932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580818013932</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="154" y="195" width="641" height="724" key="#MainKt" timestamp="1582129821660">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="154" y="195" width="641" height="724" key="#MainKt/0.27.1920.1053@0.27.1920.1053" timestamp="1582129821660" />
+    <state x="910" y="137" width="1000" height="846" key="#Project_Structure" timestamp="1580818035003">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="910" y="137" width="1000" height="846" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1580818035003" />
+    <state x="687" y="208" width="546" height="725" key="#com.intellij.ide.util.MemberChooser" timestamp="1581354236925">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="687" y="208" width="546" height="725" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1581354236925" />
+    <state x="1107" y="247" width="655" height="627" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580819167502">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1107" y="247" width="655" height="627" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1580819167502" />
+    <state x="1109" y="374" width="715" height="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581511665512">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1109" y="374" width="715" height="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.34.1920.1046@0.34.1920.1046" timestamp="1581511665512" />
+    <state x="918" y="312" width="536" height="491" key="FileChooserDialogImpl" timestamp="1582130887706">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="918" y="312" width="536" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1582130887706" />
+    <state width="894" height="189" key="GridCell.Tab.0.bottom" timestamp="1582212692787">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="894" height="189" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1582212692787" />
+    <state width="902" height="258" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
+    <state width="894" height="189" key="GridCell.Tab.0.center" timestamp="1582212692786">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="894" height="189" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1582212692786" />
+    <state width="902" height="258" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621987" />
+    <state width="894" height="189" key="GridCell.Tab.0.left" timestamp="1582212692786">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="894" height="189" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1582212692786" />
+    <state width="902" height="258" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621987" />
+    <state width="894" height="189" key="GridCell.Tab.0.right" timestamp="1582212692787">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="894" height="189" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1582212692787" />
+    <state width="902" height="258" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621987" />
+    <state width="914" height="340" key="GridCell.Tab.1.bottom" timestamp="1582136909725">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1582136909725" />
+    <state width="902" height="258" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621989" />
+    <state width="914" height="340" key="GridCell.Tab.1.center" timestamp="1582136909725">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1582136909725" />
+    <state width="902" height="258" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
+    <state width="914" height="340" key="GridCell.Tab.1.left" timestamp="1582136909725">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1582136909725" />
+    <state width="902" height="258" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
+    <state width="914" height="340" key="GridCell.Tab.1.right" timestamp="1582136909725">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="914" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1582136909725" />
+    <state width="902" height="258" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
+    <state x="325" y="104" width="1269" height="912" key="SettingsEditor" timestamp="1581426429140">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="325" y="104" width="1269" height="912" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1581426429140" />
+    <state x="620" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582118714048">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="620" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1582118714048" />
+    <state x="886" y="201" width="1034" height="879" key="find.popup" timestamp="1582190142261">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="886" y="201" width="1034" height="879" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582190142261" />
+    <state x="886" y="211" width="1034" height="786" key="find.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1581801769177" />
+    <state x="251" y="61" width="1659" height="998" key="new project wizard" timestamp="1581111775155">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="251" y="61" width="1659" height="998" key="new project wizard/0.34.1920.1046@0.34.1920.1046" timestamp="1581111775155" />
+    <state x="1181" y="190" width="508" height="741" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1581357563743">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1181" y="190" width="508" height="741" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1581357563743" />
+    <state x="1020" y="250" key="run.anything.popup" timestamp="1581426178710">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1020" y="250" key="run.anything.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1581426178710" />
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1581418227187">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1581418227187" />
+  </component>
+</project>
