@@ -4,6 +4,14 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Configures each item_row.xml with either server side or client side information like message,
+ * date and username.
+ *
+ * @author Michael Lock
+ * @date 24.02.2020
+ */
+
 class ChatMessagesHolder(
     itemView: View
 ) : RecyclerView.ViewHolder(itemView) {
@@ -11,13 +19,6 @@ class ChatMessagesHolder(
     private var txtUserName: TextView
     private var txtMessage: TextView
     private var txtDate: TextView
-
-    fun <T : RecyclerView.ViewHolder> T.listen(event: (position: Int, type: Int) -> Unit): T {
-        itemView.setOnClickListener {
-            event.invoke(getAdapterPosition(), getItemViewType())
-        }
-        return this
-    }
 
     init {
         txtUserName = itemView.findViewById(R.id.txtUserName)

@@ -4,6 +4,13 @@ import com.milo.chatclientproject0315022020.MainActivity.Companion.writer
 import kotlinx.serialization.json.Json
 import java.nio.charset.Charset
 
+/**
+ * Reads user input and sends it to server to be handled.
+ *
+ * @author Michael Lock
+ * @date 24.02.2020
+ */
+
 class ServerWrite(private var message: String) : Runnable {
     override fun run() {
         write(message)

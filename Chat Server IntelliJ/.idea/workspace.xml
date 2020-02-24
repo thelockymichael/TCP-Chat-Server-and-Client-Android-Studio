@@ -88,9 +88,6 @@
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerConnect.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerFeed.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerWrite.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/build.gradle" afterDir="false" />
@@ -100,10 +97,9 @@
       <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../RecycleView_Example_01/app/src/main/java/com/milo/recycleview_example_01/PlanetHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../RecycleView_Example_01/app/src/main/java/com/milo/recycleview_example_01/PlanetHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ChatConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ChatConnector.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Users.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Users.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

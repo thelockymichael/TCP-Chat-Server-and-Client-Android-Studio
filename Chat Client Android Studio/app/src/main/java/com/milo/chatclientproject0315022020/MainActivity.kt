@@ -22,6 +22,13 @@ import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
 
+/**
+ * Connects all the seperate classes together
+ *
+ * @author Michael Lock
+ * @date 24.02.2020
+ * */
+
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
@@ -84,9 +91,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 address = ipAddressEditText.text.toString()
                 port = Integer.parseInt(portEditText.text.toString())
 
-                //connectButton.text = "DISCONNECT"
-                //tvMessage.text = "Connected"
-                //showChatLayout()
                 serverConnect = Thread(ServerConnect(this))
                 serverConnect.start()
             } else {
@@ -110,140 +114,3 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 }
-/*
-    class Thread2(private var context: Activity) : Runnable {
-        override fun run() {
-
-            while (true) {
-                try {
-                    if (thread2.isInterrupted) {
-                        // We've been interrupted: no more crunching.
-                        Log.i("SERVER", "WE'VE BEEN INTERRUPTED")
-                        break
-                    }
-                    val message: String = reader.nextLine()
-                    if (message != null) {
-
-                        if (thread2.isInterrupted) {
-                            socket.close()
-                            reader.close()
-                            writer.close()
-                            Log.i("SERVER", "CLIENT CLOSED")
-                        }
-
-                        context.runOnUiThread {
-
-                            var messageArray: List<String> = message.split(" ")
-
-                            // Create message string property for ChatMessage
-                            var messageString = ""
-                            for (i in 1 until messageArray.size - 2) {
-                                messageString += " ${messageArray[i]}"
-                                Log.i("SERVER", message)
-                            }
-
-                            // Creates date string property for ChatMessage
-                            var messageDataString = ""
-                            for (i in messageArray.size - 2 until messageArray.size) {
-                                messageDataString += " ${messageArray[i]}"
-                                Log.i("SERVER", messageDataString)
-                            }
-
-                            Log.i(
-                                "SERVER", "1. ${messageArray[0]}" // Username or Server
-                            )
-                            Log.i("SERVER", "2. $messageString")
-                            Log.i(
-                                "SERVER", "3. $messageDataString"
-                            )
-
-                            Log.i("MESSAGE", messageArray.size.toString())
-                            Log.i("SERVER", messageArray.toString())
-                            chatMessageArrayList.add(
-                                ChatMessage(
-                                    messageString, // Message string
-                                    messageArray[0], // Username or server
-                                    messageString,  // Command string is same as message
-                                    messageDataString // Date string
-                                )
-                            )
-                            adapter.notifyDataSetChanged()
-
-                            context.recyclerView.layoutManager!!.scrollToPosition(
-                                chatMessageArrayList.size - 1
-                            )
-                        }
-                    } else {
-                        Thread(Thread1(context)).start()
-                        return
-                    }
-                } catch (e: Exception) {
-                    shutdown()
-                    e.printStackTrace()
-                }
-            }
-        }
-    }
-
-    class Thread1(private var context: Context) : Runnable {
-        override fun run() {
-            Log.i("SERVER", "Thread1 above runOnUiThread")
-            val newContext = context as Activity
-
-            try {
-                Log.i("SERVER", "IS CONNECTING?")
-                socket = Socket(address, port)
-
-                writer = socket.getOutputStream()
-                reader = Scanner(socket.getInputStream())
-
-/*                newContext.runOnUiThread {
-                    newContext.tvMessage.text = "Connected \n"
-                }*/
-                thread2 = Thread(Thread2(newContext))
-                thread2.start()
-            } catch (e: java.lang.Exception) {
-                /*if (!socket.isBound) {
-                    Log.i("SERVER", "ISN'T CONNECTED.")
-                }
-            } catch (e: Exception) {
-                newContext.tvMessage.text = "Could not connect :( \n"
-                Log.i("SERVER", "COULD NOT CONNECT")
-
-                AlertDialog.Builder(newContext)
-                    .setIcon(android.R.drawable.stat_notify_error)
-                    .setTitle("Connection error.")
-                    .setMessage("Could not connect to server. Have you got the right IP address?")
-                    .setPositiveButton(
-                        "Try again",
-                        { dialog, which ->
-                            Thread(Thread1(newContext)).start()
-                        })
-                    .setNegativeButton("OK", null)
-                    .show()*/
-                shutdown()
-                newContext.tvMessage.text = "Connected \n"
-
-                e.printStackTrace()
-            }
-        }
-    }
-
-    class Thread3(private var message: String) : Runnable {
-        override fun run() {
-            write(message)
-            writer.flush()
-        }
-
-        private fun write(message: String) {
-            val messageAsJson =
-                Json.stringify(
-                    ChatMessage.serializer(),
-                    ChatMessage(message, "userName", message, getCurrentTime())
-                )
-
-
-            writer.write((messageAsJson + '\n').toByteArray(Charset.defaultCharset()))
-        }
-    }
-}*/

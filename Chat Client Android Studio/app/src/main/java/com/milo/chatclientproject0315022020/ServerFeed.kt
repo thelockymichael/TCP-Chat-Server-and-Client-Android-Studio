@@ -11,6 +11,15 @@ import com.milo.chatclientproject0315022020.MainActivity.Companion.socket
 import com.milo.chatclientproject0315022020.MainActivity.Companion.writer
 import kotlinx.android.synthetic.main.activity_main.*
 
+
+/**
+ * Receives data from server and adds to chatMessagesArray (that's in MainActivity!)
+ * and notifies it.
+ *
+ * @author Michael Lock
+ * @date 24.02.2020
+ */
+
 class ServerFeed(private var context: Activity) : Runnable {
     override fun run() {
 

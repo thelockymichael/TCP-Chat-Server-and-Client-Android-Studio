@@ -18,6 +18,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.net.Socket
 import java.util.*
 
+/**
+ * Connects client to server and uses a UI thread to display information to the user
+ *
+ * @author Michael Lock
+ * @date 24.02.2020
+ */
+
 class ServerConnect(private var context: Context) : Runnable {
     override fun run() {
         Log.i("SERVER", "Thread1 above runOnUiThread")
@@ -42,8 +49,6 @@ class ServerConnect(private var context: Context) : Runnable {
                 newContext.sendButton.visibility = View.VISIBLE
                 newContext.editText.visibility = View.VISIBLE
             }
-            //connectButton.text = "DISCONNECT"
-            //tvMessage.text = "Connected"
         } catch (e: Exception) {
 
             newContext.runOnUiThread {
@@ -57,47 +62,7 @@ class ServerConnect(private var context: Context) : Runnable {
                     }
                     .setNegativeButton("OK", null)
                     .show()
-
-                /*val builder = AlertDialog.Builder(newContext)
-
-                // Set the alert dialog title
-                builder.setTitle("App background color")
-
-                // Display a message on alert dialog
-                builder.setMessage("Are you want to set the app background color to RED?")
-
-                // Set a positive button and its click listener on alert dialog
-                builder.setPositiveButton("YES") { dialog, which ->
-                    // Do something when user press the positive button
-                    Toast.makeText(newContext, "Ok, we change the app background.", Toast.LENGTH_SHORT)
-                        .show()
-
-                    // Change the app background color
-                    //root_layout.setBackgroundColor(Color.RED)
-                }
-
-
-                // Display a negative button on alert dialog
-                builder.setNegativeButton("No") { dialog, which ->
-                    Toast.makeText(newContext, "You are not agree.", Toast.LENGTH_SHORT).show()
-                }
-
-
-                // Display a neutral button on alert dialog
-                builder.setNeutralButton("Cancel") { _, _ ->
-                    Toast.makeText(newContext, "You cancelled the dialog.", Toast.LENGTH_SHORT)
-                        .show()
-                }
-
-                // Finally, make the alert dialog using builder
-                val dialog: AlertDialog = builder.create()
-
-                // Display the alert dialog on app interface
-                dialog.show()*/
             }
-
-            //shutdown()
-            //newContext.tvMessage.text = "Connected \n"
 
             e.printStackTrace()
         }

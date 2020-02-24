@@ -9,6 +9,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
+/**
+ * Adapter for chat messages.
+ * RecyclerView recycles each item row.
+ *
+ * @author Michael Lock
+ * @date 24.02.2020
+ */
+
+
 class ChatMessageAdapter(var context: Context, var chatMessages: ArrayList<ChatMessage>) :
     RecyclerView.Adapter<ChatMessagesHolder>() {
 
@@ -22,25 +31,7 @@ class ChatMessageAdapter(var context: Context, var chatMessages: ArrayList<ChatM
     }
 
     override fun onBindViewHolder(holder: ChatMessagesHolder, position: Int) {
-        var planet: ChatMessage = chatMessages[position]
-        holder.setDetails(planet)
-
-        //var layoutManager = holder as LinearLayoutManager
-        //layoutManager.scrollToPo
-
-        /*recyclerView.layoutManager = LinearLayoutManager(this)
-        MainActivity.chatMessageArrayList = ArrayList()
-        MainActivity.adapter = ChatMessageAdapter(this, MainActivity.chatMessageArrayList)
-        recyclerView.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
-        recyclerView.adapter = MainActivity.adapter*/
-
-
-
-
-/*        holder.itemView.setOnClickListener {
-            val intent = Intent(context, DetailsActivity::class.java)
-            intent.putExtra("txtName", planet.planetName)
-            context.startActivity(intent)
-        }*/
+        var message: ChatMessage = chatMessages[position]
+        holder.setDetails(message)
     }
 }
