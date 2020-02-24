@@ -6,6 +6,8 @@ import android.content.Context
 import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,15 +22,25 @@ import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+
+    override fun onClick(v: View) {
+        if (v.id == R.id.backgroundLayout || v.id == R.id.recyclerView) {
+            val inputMethodManager =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+
+        }
+    }
 
     companion object {
-        lateinit var thread1: Thread
-        lateinit var thread2: Thread
-        lateinit var thread3: Thread
+        lateinit var serverConnect: Thread
+        lateinit var serverFeed: Thread
 
-        internal const val address = "192.168.105.13"
-        internal const val port = 9999
+        internal var address = "192.168.1.4"
+            private set
+        internal var port = 9999
+            private set
         lateinit var socket: Socket
         lateinit var writer: OutputStream
         lateinit var reader: Scanner
@@ -38,14 +50,14 @@ class MainActivity : AppCompatActivity() {
         var connected = false
 
         fun shutdown() {
-
             socket.close()
             writer.close()
             reader.close()
-            thread1.interrupt()
-            thread2.interrupt()
+            serverConnect.interrupt()
+            serverFeed.interrupt()
             chatMessageArrayList.clear()
             adapter.notifyDataSetChanged()
+
         }
 
         fun getCurrentTime(): String {
@@ -58,6 +70,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        backgroundLayout.setOnClickListener(this)
+
         recyclerView.layoutManager = LinearLayoutManager(this)
         chatMessageArrayList = ArrayList()
         adapter = ChatMessageAdapter(this, chatMessageArrayList)
@@ -67,14 +81,22 @@ class MainActivity : AppCompatActivity() {
         connectButton.setOnClickListener {
             connected = !connected
             if (connected) {
-                connectButton.text = "DISCONNECT"
-                tvMessage.text = "Connected"
-                thread1 = Thread(Thread1(this))
-                thread1.start()
+                address = ipAddressEditText.text.toString()
+                port = Integer.parseInt(portEditText.text.toString())
+
+                //connectButton.text = "DISCONNECT"
+                //tvMessage.text = "Connected"
+                //showChatLayout()
+                serverConnect = Thread(ServerConnect(this))
+                serverConnect.start()
             } else {
                 connectButton.text = "CONNECT"
                 tvMessage.text = "Disconnected"
                 shutdown()
+                recyclerView.visibility = View.GONE
+                connectToServerLayout.visibility = View.VISIBLE
+                editText.visibility = View.GONE
+                sendButton.visibility = View.GONE
                 Log.i("SERVER", "INTERRUPTED")
             }
         }
@@ -82,11 +104,13 @@ class MainActivity : AppCompatActivity() {
         sendButton.setOnClickListener {
             val message = editText.text.toString().trim()
             if (message.isNotEmpty()) {
-                Thread(Thread3(message)).start()
+                Thread(ServerWrite(message)).start()
+                editText.setText("")
             }
         }
     }
-
+}
+/*
     class Thread2(private var context: Activity) : Runnable {
         override fun run() {
 
@@ -222,4 +246,4 @@ class MainActivity : AppCompatActivity() {
             writer.write((messageAsJson + '\n').toByteArray(Charset.defaultCharset()))
         }
     }
-}
+}*/

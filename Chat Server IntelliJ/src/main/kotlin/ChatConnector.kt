@@ -43,14 +43,15 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
                 // Loops until client inputs valid username
                 if (Users.checkUsername(newMessage.message) && newMessage.message.trim().isNotEmpty()) {
                     ChatHistory.registerObserver(this)
+                    println("TRIMMED: ${newMessage.message.trim()}")
                     userName = newMessage.message
                     write("Server Username accepted. Welcome aboard! ${Utils.getCurrentTime()}")
                     println("Server Username accepted. Welcome aboard! ${Utils.getCurrentTime()}")
                     println("Server Username: $userName ${Utils.getCurrentTime()}")
                     break
                 }
-                write("Server Username already taken. Try again. ${Utils.getCurrentTime()}")
-                println("Server Username already taken. Try again. ${Utils.getCurrentTime()}")
+                write("Server Username already taken or contains illegal characters. Try again. ${Utils.getCurrentTime()}")
+                println("Server Username already taken or contains illegal characters. Try again. ${Utils.getCurrentTime()}")
 
             } catch (e: java.lang.Exception) {
                 shutdown()

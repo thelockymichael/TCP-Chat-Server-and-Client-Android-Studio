@@ -8,6 +8,10 @@
  * @date 10.02.2020
  */
 
+enum class Colors {
+    RED, BLACK, GREEN
+}
+
 object Users {
 
     private val userNames = HashSet<String>()
@@ -21,7 +25,7 @@ object Users {
     }
 
     fun checkUsername(newUsername: String): Boolean {
-        if (!userNames.contains(newUsername)) {
+        if (!userNames.contains(newUsername) && !newUsername.contains(" ")) {
             insertUserName(newUsername)
             println("Username accepted")
             return true
