@@ -9,9 +9,11 @@ To download and and use the software you need:
   <li>Internet connection</li>
   <li>Android Studio</li>
   <li>IntelliJ software (I used community edition, which is FREE!)</li>
- </ul>
- `
-### Usage
+ </ul>`
+ 
+###  Usage
+Explanation on how to run and build the Chat client mobile application and how
+TCP/IP protocol is used to establish a connection and communicate with server and client.
 
 <details><summary><b>Show instructions</b></summary>
 
@@ -20,8 +22,6 @@ To download and and use the software you need:
 2. Open the Client folder in Android Studio (3.5.3v at the time of writing this) 
 
 3. Open the Server folder in IntelliJ (2019.3.3 at the time of writing this) 
-
-4. 
 
 #### How to run server and client and compile client app into an APK file.
 
@@ -56,6 +56,12 @@ Builds an APK of all modules in the current project for their selected variant. 
   <img src="readme_images/Android studio build APK.jpeg" alt="build project" width="650">
 </p>
 
+</details>
+
+<details><summary><b>How to establish a connection to server.</b></summary>
+  1. Server socket is bound to a port and uses the assigned IP address. 
+     For this example we can use private address '192.168.1.10' and port '9999'.
+  2. In chat client a connection is established by using the above address and port. 
 </details>
 
 ### Automation testing
