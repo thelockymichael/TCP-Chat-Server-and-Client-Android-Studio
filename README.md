@@ -34,26 +34,26 @@ To run the server press the 'Run' button or use shortcut Ctrl + Shift + F10 (on 
 * <b> Stopping the server. </b>
 To stop the server you can similiarily press the 'Stop' button.
 <p align="center">
-  <img src="readme_images/ntelliJ stop running server.png" alt="build project" width="650">
+  <img src="readme_images/IntelliJ stop running server.png" alt="build project" width="650">
 </p>
 
 * <b> Running client in Android Studio. </b>
 To run the client press the 'Run' button or use shortcut Ctrl + Shift + F10 (on Windows or Linux).
 Both IDEs are built from the same code, thus they both have the same functionality.
 <p align="center">
-  <img src="android studio run play button.png" alt="play project" width="650">
+  <img src="readme_images/android studio run play button.png" alt="play project" width="650">
 </p>
 
 * <b> Stopping client emulation in Android Studio. </b>
 To stop the client you can similiarily press the 'Stop' button.
 <p align="center">
-  <img src="android studio stop running button.png" alt="play project" width="650">
+  <img src="readme_images/android studio stop running button.png" alt="play project" width="650">
 </p>
 
 * <b> Building project. </b>
-Builds an APK of all modules in the current project for their selected variant. When IDE finishes building, a confirmation notification appears, providing a link to the APK file. The path to file is in <i><b>BirdApp/app/build/outputs/apk/debug/</b></i> and default file name is app-debug.
+Builds an APK of all modules in the current project for their selected variant. When IDE finishes building, a confirmation notification appears, providing a link to the APK file. The path to file is in <i><b>Chat Client Android Studio/app/build/outputs/apk/debug/</b></i> and default file name is app-debug.apk
 <p align="center">
-  <img src="readme_images/build_circle.jpeg" alt="build project" width="650">
+  <img src="readme_images/Android studio build APK.jpeg" alt="build project" width="650">
 </p>
 
 </details>
