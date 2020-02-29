@@ -21,26 +21,39 @@ To download and and use the software you need:
 
 3. Open the Server folder in IntelliJ (2019.3.3 at the time of writing this) 
 
+4. 
+
 #### How to run server and client and compile client app into an APK file.
 
 * <b> Running server in IntelliJ. </b>
-
-In the image the current emulating device is set to Pixel 3 XL.
+To run the server press the 'Run' button or use shortcut Ctrl + Shift + F10 (on Windows or Linux).
 <p align="center">
   <img src="readme_images/IntelliJ Server Run project.png" alt="play project" width="650">
+</p>
+
+* <b> Stopping the server. </b>
+To stop the server you can similiarily press the 'Stop' button.
+<p align="center">
+  <img src="readme_images/ntelliJ stop running server.png" alt="build project" width="650">
+</p>
+
+* <b> Running client in Android Studio. </b>
+To run the client press the 'Run' button or use shortcut Ctrl + Shift + F10 (on Windows or Linux).
+Both IDEs are built from the same code, thus they both have the same functionality.
+<p align="center">
+  <img src="android studio run play button.png" alt="play project" width="650">
+</p>
+
+* <b> Stopping client emulation in Android Studio. </b>
+To stop the client you can similiarily press the 'Stop' button.
+<p align="center">
+  <img src="android studio stop running button.png" alt="play project" width="650">
 </p>
 
 * <b> Building project. </b>
 Builds an APK of all modules in the current project for their selected variant. When IDE finishes building, a confirmation notification appears, providing a link to the APK file. The path to file is in <i><b>BirdApp/app/build/outputs/apk/debug/</b></i> and default file name is app-debug.
 <p align="center">
   <img src="readme_images/build_circle.jpeg" alt="build project" width="650">
-</p>
-
-* <b> Make project. </b>
-Make project compile all the source files in the entire project that have been modified since the last compilation are compiled. 
-Dependent source files, if appropriate, are also compiled.
-<p align="center">
-  <img src="readme_images/make_circle.jpeg" alt="make project" width="650">
 </p>
 
 </details>
