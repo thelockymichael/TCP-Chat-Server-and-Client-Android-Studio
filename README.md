@@ -4,12 +4,12 @@ Project uses Socket objects to provide a connection to the server and create a c
 
 ### Prerequisities
 To download and and use the software you need: 
-`<ul>
+<ul>
   <li>Computer</li>
   <li>Internet connection</li>
   <li>Android Studio</li>
   <li>IntelliJ software (I used community edition, which is FREE!)</li>
- </ul>`
+</ul>
  
 ###  Usage
 Explanation on how to run and build the Chat client mobile application and how
@@ -71,13 +71,16 @@ Not implemented :(
 Images of how the application looks.
 <details><summary><b>Screenshots</b></summary>
 <p align="center">
-  <img src="readme_images/main_view.png" alt="details" width="200">
-  <img src="readme_images/details_view.png" alt="details" width="200">
-  <img src="readme_images/maps_view.png" alt="details" width="200">
+  <img src="app_screenshots/connect_screen.png" alt="details" width="200">
+  <img src="app_screenshots/connected_screen.png" alt="details" width="200">
+  <img src="app_screenshots/connected_screen02.png" alt="details" width="200">
+  <img src="app_screenshots/current_users.png" alt="details" width="200">
+  <img src="app_screenshots/message_derek.png.png" alt="details" width="200">
+  <img src="app_screenshots/message_history.png" alt="details" width="200"> 
+  <img src="app_screenshots/tap_button_list.png" alt="details" width="200"> 
+  <img src="app_screenshots/top_chatters.png" alt="details" width="200">
 </p>
 </details>
-
-
 
 ### Change log
 See CHANGELOG [here](CHANGELOG.md)
