@@ -23,11 +23,11 @@ To download and and use the software you need:
 
 #### How to run server and client and compile client app into an APK file.
 
-* <b> Running project. </b>
-Running project will launch the application on an emulated or physical Android device.
+* <b> Running server in IntelliJ. </b>
+
 In the image the current emulating device is set to Pixel 3 XL.
 <p align="center">
-  <img src="readme_images/play_circle.jpeg" alt="play project" width="650">
+  <img src="readme_images/IntelliJ Server Run project.png" alt="play project" width="650">
 </p>
 
 * <b> Building project. </b>
