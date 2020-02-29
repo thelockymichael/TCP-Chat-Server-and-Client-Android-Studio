@@ -53,15 +53,15 @@ To stop the client you can similiarily press the 'Stop' button.
 * <b> Building project. </b>
 Builds an APK of all modules in the current project for their selected variant. When IDE finishes building, a confirmation notification appears, providing a link to the APK file. The path to file is in <i><b>Chat Client Android Studio/app/build/outputs/apk/debug/</b></i> and default file name is app-debug.apk
 <p align="center">
-  <img src="readme_images/Android studio build APK.jpeg" alt="build project" width="650">
+  <img src="readme_images/Android studio build APK .jpeg" alt="build project" width="650">
 </p>
-
 </details>
 
 <details><summary><b>How to establish a connection to server.</b></summary>
-  1. Server socket is bound to a port and uses the assigned IP address. 
-     For this example we can use private address '192.168.1.10' and port '9999'.
-  2. In chat client a connection is established by using the above address and port. 
+1. Server socket is bound to a port and uses the assigned IP address. For this example we can use private address '192.168.1.10' and port '9999'.
+  
+  
+2. In chat client a connection is established by using the above address and port. 
 </details>
 
 ### Automation testing
