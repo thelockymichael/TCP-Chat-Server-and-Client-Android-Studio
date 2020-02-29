@@ -68,12 +68,16 @@ Builds an APK of all modules in the current project for their selected variant. 
 Not implemented :( 
 
 ### Application screenshots
-
+Images of how the application looks.
+<details><summary><b>Screenshots</b></summary>
 <p align="center">
-  <img src="readme_images/main_view.png" alt="details" width="300">
-  <img src="readme_images/details_view.png" alt="details" width="300">
-  <img src="readme_images/maps_view.png" alt="details" width="300">
+  <img src="readme_images/main_view.png" alt="details" width="200">
+  <img src="readme_images/details_view.png" alt="details" width="200">
+  <img src="readme_images/maps_view.png" alt="details" width="200">
 </p>
+</details>
+
+
 
 ### Change log
 See CHANGELOG [here](CHANGELOG.md)
