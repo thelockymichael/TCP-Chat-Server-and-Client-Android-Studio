@@ -7,8 +7,8 @@ To download and and use the software you need:
 <ul>
   <li>Computer</li>
   <li>Internet connection</li>
-  <li>Android Studio</li>
-  <li>IntelliJ software (I used community edition, which is FREE!)</li>
+  <li>Android Studio (FREE) </li>
+  <li>IntelliJ software (I used community edition, which is also FREE)</li>
 </ul>
  
 ###  Usage
