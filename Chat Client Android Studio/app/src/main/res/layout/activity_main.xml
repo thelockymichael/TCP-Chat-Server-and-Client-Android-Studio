@@ -107,15 +107,6 @@
             app:layout_constraintStart_toEndOf="@+id/ipAddressEditText"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/tapCommandButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:fabSize="normal"
-            app:srcCompat="@android:drawable/ic_input_add"
-            tools:layout_editor_absoluteX="315dp"
-            tools:layout_editor_absoluteY="594dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -172,6 +163,19 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tapCommandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="72dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

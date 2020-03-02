@@ -34,7 +34,6 @@ import kotlin.concurrent.thread
 
 open class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-
     override fun onClick(v: View) {
         if (v.id == R.id.backgroundLayout || v.id == R.id.recyclerView) {
             val inputMethodManager =
@@ -84,8 +83,13 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
                 context.connectButton.text = "DISCONNECT"
                 context.tvMessage.text = "Connected"
                 connected = true
-                context.recyclerView.visibility = View.VISIBLE
+
+                // Connection screen
                 context.connectToServerLayout.visibility = View.GONE
+
+                // Chat room
+                context.recyclerView.visibility = View.VISIBLE
+                context.tapCommandButton.visibility = View.VISIBLE
                 context.button_chatbox_send.visibility = View.VISIBLE
                 context.edittext_chatbox.visibility = View.VISIBLE
             }
@@ -126,10 +130,12 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    fun hideChatLayout() {
+    private fun hideChatLayout() {
         edittext_chatbox.visibility = View.GONE
         button_chatbox_send.visibility = View.GONE
-        tapCommandButton.visibility = View.GONE
+        tapCommandButton.visibility = View.INVISIBLE
+        recyclerView.visibility = View.GONE
+        button_chatbox_send.visibility = View.GONE
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -205,10 +211,13 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
         connectButton.text = "CONNECT"
         tvMessage.text = "Disconnected"
         shutdown()
-        recyclerView.visibility = View.GONE
+
+        // Connection screen enabled
         connectToServerLayout.visibility = View.VISIBLE
-        edittext_chatbox.visibility = View.GONE
-        button_chatbox_send.visibility = View.GONE
+
+        // Chat room UI elements disabled
+        hideChatLayout()
+
         Log.i("SERVER", "INTERRUPTED")
     }
 }

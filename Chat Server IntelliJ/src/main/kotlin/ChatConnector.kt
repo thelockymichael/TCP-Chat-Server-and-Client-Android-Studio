@@ -42,7 +42,6 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
         while (true) {
             try {
                 val newMessage = readUserInput()
-                write("Input username: ", "Server")
 
                 // Loops until client inputs valid username
                 if (Users.checkUsername(newMessage.message) && newMessage.message.trim().isNotEmpty()) {

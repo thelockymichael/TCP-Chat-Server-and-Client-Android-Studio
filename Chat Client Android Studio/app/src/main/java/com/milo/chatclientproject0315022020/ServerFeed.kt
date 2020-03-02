@@ -28,10 +28,10 @@ class ServerFeed(private var context: Activity) : Runnable {
 
         while (true) {
             try {
-                if (serverFeed.isInterrupted) {
-                    // We've been interrupted: no more crunching.
+                if (serverFeed.isInterrupted)
+                // We've been interrupted: no more crunching.
                     break
-                }
+
                 val message: String = reader.nextLine()
                 Log.i("MESSAGE", "MESSAGE $message")
 
