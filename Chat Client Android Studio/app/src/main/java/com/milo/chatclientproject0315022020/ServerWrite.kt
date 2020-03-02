@@ -21,7 +21,7 @@ class ServerWrite(private var message: String) : Runnable {
         val messageAsJson =
             Json.stringify(
                 ChatMessage.serializer(),
-                ChatMessage(message, "userName", message, MainActivity.getCurrentTime())
+                ChatMessage(message, "userName", message, "createdDateAtTime")
             )
 
         writer.write((messageAsJson + '\n').toByteArray(Charset.defaultCharset()))

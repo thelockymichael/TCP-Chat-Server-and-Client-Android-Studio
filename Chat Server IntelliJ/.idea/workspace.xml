@@ -2,6 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a3b6b5d-8b00-440b-8d36-4ee55765d0fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/androidTest/java/com/example/bluetoothfinder/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/java/com/example/bluetoothfinder/FoundBluetoothAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/java/com/example/bluetoothfinder/FoundBluetoothDevice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/java/com/example/bluetoothfinder/FoundBluetoothDeviceHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/java/com/example/bluetoothfinder/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/layout/item_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/app/src/test/java/com/example/bluetoothfinder/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BluetoothFinder/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/androidTest/java/com/example/microsoftazuremobileappexample01/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/java/com/example/microsoftazuremobileappexample01/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/app/src/test/java/com/example/microsoftazuremobileappexample01/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MicrosoftAzureMobileAppExample01/settings.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerBase/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerBase/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerBase/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
@@ -43,11 +125,17 @@
       <change afterPath="$PROJECT_DIR$/../../ParseServerBase/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerBase/settings.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/UserAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/UserFeedActivity.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/UserHolder.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/java/com/milo/parseserverstarter/UserListActivity.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/drawable/ic_instagram.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/drawable/ic_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/drawable/ic_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/drawable/ic_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/activity_user_feed.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/activity_user_list.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/layout/item_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/menu/bottom_navigation.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/src/main/res/menu/share_menu.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/.idea/codeStyles/Project.xml" afterDir="false" />
@@ -88,6 +176,11 @@
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PhotoImportDemo/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/SimpleDelegate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/drawable/ic_send_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/drawable/rounded_rectangle_orange.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/menu/command_popup_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_Exercise_04_19022020/app/src/main/java/com/example/android_exercise_04_19022020/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_Exercise_04_19022020/app/src/main/java/com/example/android_exercise_04_19022020/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChatClientProject0315022020/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ParseServerStarter/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ParseServerStarter/app/build.gradle" afterDir="false" />
@@ -99,7 +192,61 @@
       <change beforePath="$PROJECT_DIR$/../../RecycleView_Example_01/app/src/main/java/com/milo/recycleview_example_01/PlanetHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../RecycleView_Example_01/app/src/main/java/com/milo/recycleview_example_01/PlanetHolder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerConnect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerConnect.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerFeed.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerFeed.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerWrite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/java/com/milo/chatclientproject0315022020/ServerWrite.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/layout/item_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/layout/item_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chat Client Android Studio/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat Client Android Studio/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ChatConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/ChatConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ChatHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/ChatHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/TopChatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/TopChatter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ChatConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ChatConnector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ChatHistory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ChatHistory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TopChatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TopChatter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Users.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Users.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +257,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ChatServerMLo 4.02.2014 14.06" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,7 +287,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -217,58 +367,59 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="918" y="312" width="536" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1582130887706" />
-    <state width="914" height="189" key="GridCell.Tab.0.bottom" timestamp="1582572766923">
+    <state width="914" height="207" key="GridCell.Tab.0.bottom" timestamp="1583173704869">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="189" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1582572766923" />
+    <state width="914" height="207" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583173704869" />
     <state width="902" height="258" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
-    <state width="914" height="189" key="GridCell.Tab.0.center" timestamp="1582572766923">
+    <state width="914" height="207" key="GridCell.Tab.0.center" timestamp="1583173704869">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="189" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1582572766923" />
+    <state width="914" height="207" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583173704869" />
     <state width="902" height="258" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621987" />
-    <state width="914" height="189" key="GridCell.Tab.0.left" timestamp="1582572766923">
+    <state width="914" height="207" key="GridCell.Tab.0.left" timestamp="1583173704868">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="189" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1582572766923" />
+    <state width="914" height="207" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583173704868" />
     <state width="902" height="258" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621987" />
-    <state width="914" height="189" key="GridCell.Tab.0.right" timestamp="1582572766923">
+    <state width="914" height="207" key="GridCell.Tab.0.right" timestamp="1583173704869">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="189" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1582572766923" />
+    <state width="914" height="207" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583173704869" />
     <state width="902" height="258" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621987" />
-    <state width="914" height="340" key="GridCell.Tab.1.bottom" timestamp="1582572063720">
+    <state width="914" height="340" key="GridCell.Tab.1.bottom" timestamp="1582619297348">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1582572063720" />
+    <state width="914" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1582619297348" />
     <state width="902" height="258" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621989" />
-    <state width="914" height="340" key="GridCell.Tab.1.center" timestamp="1582572063719">
+    <state width="914" height="340" key="GridCell.Tab.1.center" timestamp="1582619297347">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1582572063719" />
+    <state width="914" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1582619297347" />
     <state width="902" height="258" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
-    <state width="914" height="340" key="GridCell.Tab.1.left" timestamp="1582572063719">
+    <state width="914" height="340" key="GridCell.Tab.1.left" timestamp="1582619297347">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1582572063719" />
+    <state width="914" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1582619297347" />
     <state width="902" height="258" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
-    <state width="914" height="340" key="GridCell.Tab.1.right" timestamp="1582572063719">
+    <state width="914" height="340" key="GridCell.Tab.1.right" timestamp="1582619297348">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1582572063719" />
+    <state width="914" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1582619297348" />
     <state width="902" height="258" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1581883621988" />
-    <state x="325" y="104" width="1269" height="912" key="SettingsEditor" timestamp="1581426429140">
-      <screen x="0" y="34" width="1920" height="1046" />
+    <state x="325" y="97" width="1022" height="737" key="SettingsEditor" timestamp="1583158740329">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="325" y="97" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1583158740329" />
     <state x="325" y="104" width="1269" height="912" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1581426429140" />
     <state x="620" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582118714048">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="620" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1582118714048" />
-    <state x="886" y="201" width="1034" height="879" key="find.popup" timestamp="1582567866671">
+    <state x="886" y="201" width="1034" height="879" key="find.popup" timestamp="1583159277622">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="886" y="201" width="1034" height="879" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582567866671" />
+    <state x="886" y="201" width="1034" height="879" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1583159277622" />
     <state x="886" y="211" width="1034" height="786" key="find.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1581801769177" />
     <state x="251" y="61" width="1659" height="998" key="new project wizard" timestamp="1581111775155">
       <screen x="0" y="34" width="1920" height="1046" />
@@ -278,14 +429,15 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="1181" y="190" width="508" height="741" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1581357563743" />
-    <state x="1020" y="244" key="run.anything.popup" timestamp="1582570312048">
+    <state x="1020" y="244" key="run.anything.popup" timestamp="1583154945380">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1020" y="244" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582570312048" />
+    <state x="1020" y="244" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1583154945380" />
     <state x="1020" y="250" key="run.anything.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1581426178710" />
-    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1581418227187">
-      <screen x="0" y="34" width="1920" height="1046" />
+    <state x="539" y="38" width="840" height="1041" key="search.everywhere.popup" timestamp="1582620003331">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="539" y="38" width="840" height="1041" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582620003331" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1581418227187" />
   </component>
 </project>

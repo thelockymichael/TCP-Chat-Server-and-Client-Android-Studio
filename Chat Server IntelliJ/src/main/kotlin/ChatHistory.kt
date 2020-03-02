@@ -33,16 +33,16 @@ object ChatHistory : ChatHistoryObservable {
     }
 
     override fun toString(): String {
-        var listOfMessages = "Server Current message history: ${Utils.getCurrentTime()}\n"
+        var listOfMessages = "Current message history: \n"
 
         // Lists all users without a newline that creates an empty list item
         var index = 0
         for (message in messages) {
             index++
             listOfMessages += if (index == messages.size)
-                "${message.user} ${message.message} ${message.createdDateTime}"
+                "${message.user}: ${message.message} ${message.createdDateTime}"
             else
-                "${message.user} ${message.message} ${message.createdDateTime}\n"
+                "${message.user}: ${message.message} ${message.createdDateTime}\n"
         }
 
         return listOfMessages

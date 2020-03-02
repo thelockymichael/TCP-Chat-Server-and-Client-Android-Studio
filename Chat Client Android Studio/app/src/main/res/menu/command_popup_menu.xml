@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/list_users"
+        android:title="List users" />
+
+    <item
+        android:id="@+id/list_history"
+        android:title="List history" />
+
+    <item
+        android:id="@+id/list_top"
+        android:title="List top" />
+</menu>

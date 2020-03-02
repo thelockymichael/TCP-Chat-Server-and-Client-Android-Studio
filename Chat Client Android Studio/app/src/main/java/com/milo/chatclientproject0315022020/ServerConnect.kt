@@ -6,9 +6,13 @@ import android.content.Context
 import android.graphics.Color
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.Toast
 import com.milo.chatclientproject0315022020.MainActivity.Companion.address
+import com.milo.chatclientproject0315022020.MainActivity.Companion.connectToServerUI
 import com.milo.chatclientproject0315022020.MainActivity.Companion.connected
+import com.milo.chatclientproject0315022020.MainActivity.Companion.connectionError
+import com.milo.chatclientproject0315022020.MainActivity.Companion.disconnectFromServer
 import com.milo.chatclientproject0315022020.MainActivity.Companion.port
 import com.milo.chatclientproject0315022020.MainActivity.Companion.reader
 import com.milo.chatclientproject0315022020.MainActivity.Companion.serverFeed
@@ -26,9 +30,12 @@ import java.util.*
  */
 
 class ServerConnect(private var context: Context) : Runnable {
+
     override fun run() {
-        Log.i("SERVER", "Thread1 above runOnUiThread")
         val newContext = context as Activity
+        //Derived(MainActivity.this).connectToServerUI()
+
+        connectToServerUI(newContext)
 
         try {
             Log.i("SERVER", "IS CONNECTING?")
@@ -40,29 +47,13 @@ class ServerConnect(private var context: Context) : Runnable {
             serverFeed = Thread(ServerFeed(newContext))
             serverFeed.start()
 
-            newContext.runOnUiThread {
-                newContext.connectButton.text = "DISCONNECT"
-                newContext.tvMessage.text = "Connected"
-                connected = true
-                newContext.recyclerView.visibility = View.VISIBLE
-                newContext.connectToServerLayout.visibility = View.GONE
-                newContext.sendButton.visibility = View.VISIBLE
-                newContext.editText.visibility = View.VISIBLE
-            }
+            disconnectFromServer(newContext)
+
         } catch (e: Exception) {
 
-            newContext.runOnUiThread {
-                connected = false
-                // Initialize a new instance of
-                AlertDialog.Builder(newContext)
-                    .setTitle("Connection error")
-                    .setMessage("Could not connect to server. Have you got the right IP address?")
-                    .setPositiveButton("Try again") { _, _ ->
-                        Thread(ServerConnect(newContext)).start()
-                    }
-                    .setNegativeButton("OK", null)
-                    .show()
-            }
+            // Cannot find server
+
+            connectionError(newContext)
 
             e.printStackTrace()
         }

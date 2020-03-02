@@ -46,16 +46,16 @@ object Users {
     }
 
     override fun toString(): String {
-        var listOfUsernames = "Server Current users are: ${Utils.getCurrentTime()}\n"
+        var listOfUsernames = "Current users are: \n"
 
         // Lists all users without a newline that creates an empty list item
         var index = 0
         for (username in userNames) {
             index++
             listOfUsernames += if (index == userNames.size) {
-                "Server $username ${Utils.getCurrentTime()}"
+                "$username"
             } else {
-                "Server $username ${Utils.getCurrentTime()}\n"
+                "$username\n"
             }
             println("Index $index")
         }

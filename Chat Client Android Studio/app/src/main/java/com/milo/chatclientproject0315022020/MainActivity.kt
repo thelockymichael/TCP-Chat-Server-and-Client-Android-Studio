@@ -7,7 +7,10 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
+import android.view.animation.AccelerateInterpolator
 import android.view.inputmethod.InputMethodManager
+import android.widget.PopupMenu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,14 +32,14 @@ import kotlin.concurrent.thread
  * @date 24.02.2020
  * */
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+open class MainActivity : AppCompatActivity(), View.OnClickListener {
+
 
     override fun onClick(v: View) {
         if (v.id == R.id.backgroundLayout || v.id == R.id.recyclerView) {
             val inputMethodManager =
                 getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
-
         }
     }
 
@@ -64,53 +67,148 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             serverFeed.interrupt()
             chatMessageArrayList.clear()
             adapter.notifyDataSetChanged()
-
         }
 
-        fun getCurrentTime(): String {
-            return SimpleDateFormat("HH:mm:ss dd-MM-yyyy").format(Date())
+        fun connectToServerUI(context: Activity) {
+            context.runOnUiThread {
+                context.progressBar.visibility = View.VISIBLE
+                context.window.setFlags(
+                    WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+                    WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
+                )
+            }
+        }
+
+        fun disconnectFromServer(context: Activity) {
+            context.runOnUiThread {
+                context.connectButton.text = "DISCONNECT"
+                context.tvMessage.text = "Connected"
+                connected = true
+                context.recyclerView.visibility = View.VISIBLE
+                context.connectToServerLayout.visibility = View.GONE
+                context.button_chatbox_send.visibility = View.VISIBLE
+                context.edittext_chatbox.visibility = View.VISIBLE
+            }
+        }
+
+        fun connectionError(context: Activity) {
+            context.runOnUiThread {
+                context.progressBar.visibility = View.GONE
+                context.window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+
+                connected = false
+                // Initialize a new instance of
+                AlertDialog.Builder(context)
+                    .setTitle("Connection error")
+                    .setMessage("Could not connect to server. Have you got the right IP address?")
+                    .setPositiveButton("Try again") { _, _ ->
+                        Thread(ServerConnect(context)).start()
+                    }
+                    .setNegativeButton("OK", null)
+                    .show()
+            }
+        }
+
+        fun serverFeed(context: Activity, message: String) {
+            context.runOnUiThread {
+
+                context.progressBar.visibility = View.GONE
+                context.window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+
+                chatMessageArrayList.add(Json.parse(ChatMessage.serializer(), message))
+
+                adapter.notifyDataSetChanged()
+
+                context.recyclerView.layoutManager!!.scrollToPosition(
+                    chatMessageArrayList.size - 1
+                )
+            }
         }
     }
 
+    fun hideChatLayout() {
+        edittext_chatbox.visibility = View.GONE
+        button_chatbox_send.visibility = View.GONE
+        tapCommandButton.visibility = View.GONE
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.hide()
+        title = ""
+        hideChatLayout()
+
         backgroundLayout.setOnClickListener(this)
+        recyclerView.setOnClickListener(this)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         chatMessageArrayList = ArrayList()
         adapter = ChatMessageAdapter(this, chatMessageArrayList)
-        recyclerView.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
         recyclerView.adapter = adapter
 
         connectButton.setOnClickListener {
             connected = !connected
             if (connected) {
-                address = ipAddressEditText.text.toString()
-                port = Integer.parseInt(portEditText.text.toString())
-
-                serverConnect = Thread(ServerConnect(this))
-                serverConnect.start()
+                connectToServer()
             } else {
-                connectButton.text = "CONNECT"
-                tvMessage.text = "Disconnected"
-                shutdown()
-                recyclerView.visibility = View.GONE
-                connectToServerLayout.visibility = View.VISIBLE
-                editText.visibility = View.GONE
-                sendButton.visibility = View.GONE
-                Log.i("SERVER", "INTERRUPTED")
+                disconnectFromServer()
             }
         }
 
-        sendButton.setOnClickListener {
-            val message = editText.text.toString().trim()
+        button_chatbox_send.setOnClickListener {
+            val message = edittext_chatbox.text.toString().trim()
             if (message.isNotEmpty()) {
                 Thread(ServerWrite(message)).start()
-                editText.setText("")
+                edittext_chatbox.setText("")
             }
         }
+
+        tapCommandButton.setOnClickListener {
+            val popupMenu = PopupMenu(this, it)
+            popupMenu.setOnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    R.id.list_users -> {
+                        Thread(ServerWrite("LIST USERS")).start()
+                        edittext_chatbox.setText("")
+                        true
+                    }
+                    R.id.list_history -> {
+                        Thread(ServerWrite("LIST HISTORY")).start()
+                        edittext_chatbox.setText("")
+                        true
+                    }
+                    R.id.list_top -> {
+                        Thread(ServerWrite("LIST TOP")).start()
+                        edittext_chatbox.setText("")
+                        true
+                    }
+                    else -> false
+                }
+            }
+
+            popupMenu.inflate(R.menu.command_popup_menu)
+            popupMenu.show()
+        }
+    }
+
+    private fun connectToServer() {
+        address = ipAddressEditText.text.toString()
+        port = Integer.parseInt(portEditText.text.toString())
+
+        serverConnect = Thread(ServerConnect(this))
+        serverConnect.start()
+    }
+
+    private fun disconnectFromServer() {
+        connectButton.text = "CONNECT"
+        tvMessage.text = "Disconnected"
+        shutdown()
+        recyclerView.visibility = View.GONE
+        connectToServerLayout.visibility = View.VISIBLE
+        edittext_chatbox.visibility = View.GONE
+        button_chatbox_send.visibility = View.GONE
+        Log.i("SERVER", "INTERRUPTED")
     }
 }

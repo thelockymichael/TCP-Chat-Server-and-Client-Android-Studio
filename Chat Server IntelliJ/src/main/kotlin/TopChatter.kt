@@ -22,7 +22,7 @@ object TopChatter : ChatHistoryObserver {
         var number = 1
         for ((key, value) in result) {
             if (number <= 4) {
-                topChattersString += "Server ${key}, messages: $value, ${number}.\n"
+                topChattersString += "${number}. ${key}, message amount: $value.\n"
                 number++
             }
         }
