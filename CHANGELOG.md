@@ -3,13 +3,19 @@
 ### Added features
 
 #### Chat Client
-- Connect screen has choice for choosing IP address and port
+- IP address selection
 - List users
 - List history
 - List top users
 - Tap button for chat commands
 
-- Observable and singleton pattern
+
+#### Chat Server
+
+- Observable and singleton patterns
+  * Runables(s): ChatConnector
+  * Observable(s): ChatHistory
+  * Observer(s): ChatConnector, ChatConsole
 
 
 
