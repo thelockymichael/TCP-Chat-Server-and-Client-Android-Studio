@@ -6,10 +6,10 @@
  * @date 10.02.2020
  */
 
-object ChatHistory : ChatHistoryObservable {
+object ChatHistory : Observable {
 
     private val messages = ArrayList<ChatMessage>()
-    private val observables = mutableListOf<ChatHistoryObserver>()
+    private val observables = mutableListOf<Observer>()
 
     fun insert(message: ChatMessage) {
         println("Inserting message.")
@@ -17,12 +17,12 @@ object ChatHistory : ChatHistoryObservable {
         notifyObservers(message)
     }
 
-    override fun registerObserver(observer: ChatHistoryObserver) {
+    override fun registerObserver(observer: Observer) {
         println("Registering observer.")
         observables.add(observer)
     }
 
-    override fun deregisterObserver(observer: ChatHistoryObserver) {
+    override fun deregisterObserver(observer: Observer) {
         println("Deregistering observer.")
         observables.remove(observer)
     }
@@ -35,7 +35,7 @@ object ChatHistory : ChatHistoryObservable {
     override fun toString(): String {
         var listOfMessages = "Current message history: \n"
 
-        // Lists all users without a newline that creates an empty list item
+        // Lists all messages
         var index = 0
         for (message in messages) {
             index++

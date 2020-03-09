@@ -41,7 +41,6 @@ class ServerFeed(private var context: Activity) : Runnable {
                         socket.close()
                         reader.close()
                         writer.close()
-                        Log.i("SERVER", "CLIENT CLOSED")
                     }
 
                     serverFeed(context, message)

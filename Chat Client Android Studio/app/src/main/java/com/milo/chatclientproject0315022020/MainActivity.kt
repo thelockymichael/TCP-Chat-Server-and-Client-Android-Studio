@@ -26,7 +26,7 @@ import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
 
 /**
- * Connects all the seperate classes together
+ * Connects all classes together
  *
  * @author Michael Lock
  * @date 24.02.2020
@@ -46,7 +46,7 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
         lateinit var serverConnect: Thread
         lateinit var serverFeed: Thread
 
-        internal var address = "192.168.1.4"
+        internal var address = ""
             private set
         internal var port = 9999
             private set
@@ -115,7 +115,6 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         fun serverFeed(context: Activity, message: String) {
             context.runOnUiThread {
-
                 context.progressBar.visibility = View.GONE
                 context.window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
 

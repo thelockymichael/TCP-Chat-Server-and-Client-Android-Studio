@@ -3,7 +3,6 @@ object CommandInterpretation {
     fun executeCommand(
         chatMessage: ChatMessage
     ): String? {
-        println("${chatMessage.user} : ${chatMessage.message} || ${chatMessage.createdDateTime}")
 
         when (chatMessage.command) {
             "LIST USERS" -> return Users.toString()

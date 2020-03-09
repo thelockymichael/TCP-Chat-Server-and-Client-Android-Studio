@@ -5,7 +5,7 @@
  * @date 10.02.2020
  */
 
-object ChatConsole : ChatHistoryObserver {
+object ChatConsole : Observer {
 
     init {
         ChatHistory.registerObserver(this)

@@ -1,13 +1,12 @@
 /**
- * TopChatter singleton
- *
- * Methods for printing top chatters and mapping messages by user key.
+ * Contains methods for printing top chatters, adding new pairs and increasing
+ * the key (username) value each time user sends a chat message.
  *
  * @author Michael Lock
  * @date 10.02.2020
  */
 
-object TopChatter : ChatHistoryObserver {
+object TopChatter : Observer {
     private val chatMessages = HashMap<String, Int>()
 
     init {
@@ -19,6 +18,7 @@ object TopChatter : ChatHistoryObserver {
         var topChattersString = ""
         val result = chatMessages.toList().sortedByDescending { (_, value) -> value }.toMap()
 
+        // Lists top chatters by username, messages amount and sorts them in ascending order: 1, 2, 3...
         var number = 1
         for ((key, value) in result) {
             if (number <= 4) {

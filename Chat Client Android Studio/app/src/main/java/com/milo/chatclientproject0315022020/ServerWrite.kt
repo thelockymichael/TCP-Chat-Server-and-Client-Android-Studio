@@ -23,7 +23,6 @@ class ServerWrite(private var message: String) : Runnable {
                 ChatMessage.serializer(),
                 ChatMessage(message, "userName", message, "createdDateAtTime")
             )
-
         writer.write((messageAsJson + '\n').toByteArray(Charset.defaultCharset()))
     }
 }

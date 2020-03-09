@@ -5,7 +5,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 /**
- * Configures each item_row.xml with either server side or client side information like message,
+ * Sets each item_row.xml with either server side or client side information like message,
  * date and username.
  *
  * @author Michael Lock

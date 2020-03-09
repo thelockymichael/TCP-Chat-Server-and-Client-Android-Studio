@@ -33,14 +33,11 @@ class ServerConnect(private var context: Context) : Runnable {
 
     override fun run() {
         val newContext = context as Activity
-        //Derived(MainActivity.this).connectToServerUI()
 
         connectToServerUI(newContext)
 
         try {
-            Log.i("SERVER", "IS CONNECTING?")
             socket = Socket(address, port)
-
             writer = socket.getOutputStream()
             reader = Scanner(socket.getInputStream())
 
@@ -50,11 +47,8 @@ class ServerConnect(private var context: Context) : Runnable {
             disconnectFromServer(newContext)
 
         } catch (e: Exception) {
-
             // Cannot find server
-
             connectionError(newContext)
-
             e.printStackTrace()
         }
     }

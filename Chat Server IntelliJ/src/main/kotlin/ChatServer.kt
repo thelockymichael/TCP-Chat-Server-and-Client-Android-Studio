@@ -4,7 +4,7 @@ import kotlin.concurrent.thread
 /**
  * Creates ServerSocket and instantiates ChatConsole and TopChatter
  * to be registered as observers.
- * Each time a client connects a new ChatConnector object is instantiated.
+ * Each time a client connects - a new ChatConnector object is instantiated.
  *
  * @author Michael Lock
  * @date 10.02.2020

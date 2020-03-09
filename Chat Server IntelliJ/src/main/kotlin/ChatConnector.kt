@@ -2,18 +2,17 @@ import kotlinx.serialization.json.Json
 import java.io.OutputStream
 import java.net.Socket
 import java.nio.charset.Charset
-import java.text.SimpleDateFormat
 import java.util.*
 
 /**
- * ChatConnector compromises interface and class related functions.
+ * ChatConnector consist of interface implementation and important class related functions.
  *
  * @author Michael Lock
  * @date 10.02.2020
  */
 
 
-open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
+open class ChatConnector(client: Socket) : Runnable, Observer {
     private val client: Socket = client
     private val reader: Scanner = Scanner(client.getInputStream())
     private val writer: OutputStream = client.getOutputStream()
@@ -21,47 +20,40 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
     private var userName = ""
 
     private fun readUserInput(): ChatMessage {
-        val input = reader.nextLine().replace("userName", userName)
-            .replace("createdDateAtTime", Utils.getCurrentTime())
-
-        println("INPUT: $input")
-        println("PARSED: ${Json.parse(ChatMessage.serializer(), input)}")
+        val input = reader.nextLine().replace("userName", userName).replace("createdDateAtTime", Utils.getCurrentTime())
         return Json.parse(ChatMessage.serializer(), input)
     }
 
     override fun run() {
         running = true
 
-        // Welcome message
+        // Welcome message // FIRST THING USER SEES.
         write("Welcome to server!", "Server")
 
         println("Welcome to server!")
 
         write("Choose username", "Server")
 
+        // Loops until client inputs valid username.
         while (true) {
             try {
                 val newMessage = readUserInput()
-
-                // Loops until client inputs valid username
+                // Validates username and it's not EMPTY
                 if (Users.checkUsername(newMessage.message) && newMessage.message.trim().isNotEmpty()) {
                     ChatHistory.registerObserver(this)
-                    println("TRIMMED: ${newMessage.message.trim()}")
-                    userName = newMessage.message
+                    userName = newMessage.message // SETS username of for THIS ChatConnector.
 
                     write("Username accepted. Welcome aboard!", "Server")
-
                     println("Server Username accepted. Welcome aboard! ${Utils.getCurrentTime()}")
                     println("Server Username: $userName ${Utils.getCurrentTime()}")
                     break
                 }
 
                 write("Username already taken or contains illegal characters. Try again.", "Server")
-
                 println("Server Username already taken or contains illegal characters. Try again. ${Utils.getCurrentTime()}")
 
             } catch (e: java.lang.Exception) {
-                shutdown()
+                shutdown() // Closes connection with client.
                 e.printStackTrace()
                 break
             }
@@ -70,16 +62,15 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
 
         while (running) {
             try {
-                // Deserialize (parse)
+                // Deserialize user message.
                 val newMessage = readUserInput()
-
+                // Checks that user message contains something.
                 if (!newMessage.message.isBlank()) {
                     val interpretedInput = CommandInterpretation.executeCommand(newMessage)
                     if (interpretedInput != null) { // Checks for returnable value from CommandInterpretation object
                         when (interpretedInput) {
                             "EXIT" -> shutdown()
                             "CHANGE USERNAME" -> {
-                                //write("Server Choose new username. ${Utils.getCurrentTime()}")
 
                                 write("Choose new username.", "Server")
 
@@ -91,10 +82,7 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
                                 ) {
                                     userName = newUsernameInput.message
                                     write("Username changed successfully.", "Server")
-                                    //write("Server Username changed successfully. ${Utils.getCurrentTime()}")
                                 } else write("Username already exists.", "Server")
-                                //write("Username already exists. ${Utils.getCurrentTime()}")
-
                             }
                             else -> {
                                 ChatHistory.insert(newMessage)
@@ -105,20 +93,16 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
                     }
                 } else
                     write("Please type in something.", "Server")
-                //write("Server Please input something.")
 
             } catch (e: Exception) {
                 println("Virhe.")
-                shutdown()
+                shutdown() // Closes client connection.
             }
         }
     }
 
+    // Sends USER or SERVER messages.
     private fun write(message: String?, user: String) {
-
-        val json = Json.stringify(ChatMessage.serializer(), ChatMessage(message!!, user, message, Utils.getCurrentTime()))
-
-        println("JSON: " + json)
 
         writer.write(
             (Json.stringify(
@@ -127,12 +111,6 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
             ) + "\n").toByteArray(Charset.defaultCharset())
         )
 
-        println(
-            (Json.stringify(
-                ChatMessage.serializer(),
-                ChatMessage(message!!, user, message, Utils.getCurrentTime())
-            ) + "\n").toByteArray(Charset.defaultCharset())
-        )
     }
 
 
@@ -146,23 +124,10 @@ open class ChatConnector(client: Socket) : Runnable, ChatHistoryObserver {
         println("${client.inetAddress.hostAddress} closed the connection ${Utils.getCurrentTime()}")
     }
 
+    /*
+    * newMessage method is called everytime a new message is added to ChatHistory.
+    * */
     override fun newMessage(message: ChatMessage) {
-        //write("${userName} : ${message.message} || ${message.createdDateTime}")
-        println("1st LINE: ${message.user} ${message.message} ${message.createdDateTime}")
-        //write("${message.user} ${message.message} ${message.createdDateTime}")
-        Json.stringify(
-            ChatMessage.serializer(),
-            ChatMessage(message.message, message.user, message.message, message.createdDateTime)
-        )
         write(message.message, message.user)
-
-        println(
-            "JSON STRINGIFY: " +
-                    Json.stringify(
-                        ChatMessage.serializer(),
-                        ChatMessage(message.message, message.user, message.message, message.createdDateTime)
-                    )
-        )
-
     }
 }

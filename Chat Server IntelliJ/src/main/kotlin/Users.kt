@@ -1,8 +1,6 @@
 /**
- * TopChatter singleton
- *
- * Methods for removing, inserting and checking username for its availability.
- * toString() method for returning all the user names.
+ * Methods for removing, inserting and checking username availability.
+ * ToString() method is for returning all the usernames.
  *
  * @author Michael Lock
  * @date 10.02.2020
@@ -48,7 +46,7 @@ object Users {
     override fun toString(): String {
         var listOfUsernames = "Current users are: \n"
 
-        // Lists all users without a newline that creates an empty list item
+        // Lists all users line by line
         var index = 0
         for (username in userNames) {
             index++
